@@ -22,6 +22,8 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
         txtViewResult.isEditable = false
+        txtViewResult.layer.cornerRadius = 5;
+        imgViewPicked.layer.cornerRadius = 5;
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
 
@@ -32,6 +34,7 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func onBtnImageAction(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             
@@ -41,14 +44,23 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.present(imagePicker, animated: true, completion: nil)
         }
     }
+    
     @IBAction func onBtnConvertAction(_ sender: Any) {
     }
     @IBAction func onBtnSaveAction(_ sender: Any) {
+    }
+    @IBAction func onBtnCameraAction(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            imagePicker.sourceType = .camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage

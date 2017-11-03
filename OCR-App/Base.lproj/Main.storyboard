@@ -49,6 +49,9 @@
                                         <rect key="frame" x="110" y="4" width="58" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="photo-camera"/>
+                                        <connections>
+                                            <action selector="onBtnCameraAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vKg-b5-0e3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7G-Hc-hVu" userLabel="settingButton">
                                         <rect key="frame" x="207" y="11" width="55" height="35"/>
