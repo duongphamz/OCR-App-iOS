@@ -8,10 +8,20 @@
 
 import UIKit
 
-class ScanViewController: UIViewController {
+class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    @IBOutlet weak var txtViewResult: UITextView!
+    @IBOutlet weak var imgViewPicked: UIImageView!
+    var imagePicker: UIImagePickerController!
 
+    @IBOutlet weak var btnImage: UIButton!
+    @IBOutlet weak var btnCamera: UIButton!
+    @IBOutlet weak var btnSetting: UIButton!
+    @IBOutlet weak var btnSave: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -20,16 +30,23 @@ class ScanViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func onBtnImageAction(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            
+            imagePicker.sourceType = .photoLibrary;
+            imagePicker.allowsEditing = true
+            
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        imgViewPicked.image = image
+        dismiss(animated:true, completion: nil)
+    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
