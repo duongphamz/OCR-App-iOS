@@ -13,6 +13,7 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var imgViewPicked: UIImageView!
     var imagePicker: UIImagePickerController!
 
+    @IBOutlet weak var btnConvert: UIBarButtonItem!
     @IBOutlet weak var btnImage: UIButton!
     @IBOutlet weak var btnCamera: UIButton!
     @IBOutlet weak var btnSetting: UIButton!
@@ -20,6 +21,7 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtViewResult.isEditable = false
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
 
@@ -39,7 +41,14 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             self.present(imagePicker, animated: true, completion: nil)
         }
     }
+    @IBAction func onBtnConvertAction(_ sender: Any) {
+    }
+    @IBAction func onBtnSaveAction(_ sender: Any) {
+    }
     
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage

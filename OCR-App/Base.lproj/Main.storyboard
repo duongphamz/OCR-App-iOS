@@ -73,6 +73,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
                             </button>
+                            <connections>
+                                <action selector="onBtnSaveAction:" destination="BYZ-38-t0r" id="gEm-Jt-0hz"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="bgn-gj-7iB">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="k4R-KK-7z1">
@@ -80,10 +83,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Convert"/>
                             </button>
+                            <connections>
+                                <action selector="onBtnConvertAction:" destination="BYZ-38-t0r" id="RJ0-LH-SmI"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="btnCamera" destination="5lg-8u-gGO" id="ui6-5F-0yH"/>
+                        <outlet property="btnConvert" destination="bgn-gj-7iB" id="Gzr-ox-gNG"/>
                         <outlet property="btnImage" destination="D4M-Qm-3Wx" id="plq-TZ-Lga"/>
                         <outlet property="btnSave" destination="66R-Wt-aqg" id="xmX-hP-kgD"/>
                         <outlet property="btnSetting" destination="X7G-Hc-hVu" id="gYK-WY-Wft"/>
