@@ -85,10 +85,10 @@
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="onButtonConvertAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="koY-6t-HSw"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="onBtnConvertAction:" destination="BYZ-38-t0r" id="RJ0-LH-SmI"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

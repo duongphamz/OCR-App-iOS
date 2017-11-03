@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import TesseractOCR
 
-class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, G8TesseractDelegate {
     @IBOutlet weak var txtViewResult: UITextView!
     @IBOutlet weak var imgViewPicked: UIImageView!
     var imagePicker: UIImagePickerController!
@@ -19,6 +20,8 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var btnSetting: UIButton!
     @IBOutlet weak var btnSave: UIButton!
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         txtViewResult.isEditable = false
@@ -27,12 +30,24 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
 
+
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func onButtonConvertAction(_ sender: Any) {
+        txtViewResult.isEditable = true
+        if let tesseract = G8Tesseract(language: "eng") {
+            tesseract.delegate = self
+            tesseract.image = imgViewPicked.image?.g8_blackAndWhite()
+            tesseract.recognize()
+            
+            txtViewResult.text = tesseract.recognizedText
+        }
     }
     
     @IBAction func onBtnImageAction(_ sender: Any) {
@@ -45,10 +60,10 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
     
-    @IBAction func onBtnConvertAction(_ sender: Any) {
-    }
+
     @IBAction func onBtnSaveAction(_ sender: Any) {
     }
+    
     @IBAction func onBtnCameraAction(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             imagePicker.sourceType = .camera;
@@ -66,6 +81,10 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         imgViewPicked.image = image
         dismiss(animated:true, completion: nil)
+    }
+    
+    func progressImageRecognition(for tesseract: G8Tesseract!) {
+        print("Recognition Progress \(tesseract.progress) %")
     }
     
 
