@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		222D97851FAFFE4700F0739E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D97841FAFFE4700F0739E /* HistoryViewController.swift */; };
 		22E7EBF01FACE66200273F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7EBEF1FACE66200273F9A /* AppDelegate.swift */; };
 		22E7EBF51FACE66200273F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E7EBF31FACE66200273F9A /* Main.storyboard */; };
 		22E7EBF71FACE66200273F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E7EBF61FACE66200273F9A /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		1C0FB7607F3679FE788211A6 /* Pods-OCR-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCR-App/Pods-OCR-App.release.xcconfig"; sourceTree = "<group>"; };
+		222D97841FAFFE4700F0739E /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		22E7EBEC1FACE66200273F9A /* OCR-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E7EBEF1FACE66200273F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E7EBF41FACE66200273F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				22E7EC1F1FACFBE100273F9A /* Tessdata */,
 				22E7EBEF1FACE66200273F9A /* AppDelegate.swift */,
 				22E7EC1D1FACE7F700273F9A /* ScanViewController.swift */,
+				222D97841FAFFE4700F0739E /* HistoryViewController.swift */,
 				22E7EBF31FACE66200273F9A /* Main.storyboard */,
 				22E7EBF61FACE66200273F9A /* Assets.xcassets */,
 				22E7EBF81FACE66200273F9A /* LaunchScreen.storyboard */,
@@ -465,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222D97851FAFFE4700F0739E /* HistoryViewController.swift in Sources */,
 				22E7EBF01FACE66200273F9A /* AppDelegate.swift in Sources */,
 				22E7EC1E1FACE7F700273F9A /* ScanViewController.swift in Sources */,
 			);

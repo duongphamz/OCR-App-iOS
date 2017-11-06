@@ -27,17 +27,29 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         txtViewResult.isEditable = false
         txtViewResult.layer.cornerRadius = 5;
         imgViewPicked.layer.cornerRadius = 5;
+        imgViewPicked.layer.borderWidth = 1;
+        txtViewResult.layer.borderWidth = 1;
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ScanViewController.dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
 
 
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     @IBAction func onButtonConvertAction(_ sender: Any) {
         txtViewResult.isEditable = true
@@ -61,7 +73,16 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
 
+    @IBAction func onBtnHistoryAction(_ sender: Any) {
+        self.performSegue(withIdentifier: "navihistoryController", sender: nil)
+    }
     @IBAction func onBtnSaveAction(_ sender: Any) {
+    }
+    @IBAction func onBtnShareAction(_ sender: Any) {
+        let activityVC = UIActivityViewController(activityItems: [txtViewResult.text], applicationActivities: [])
+        
+        activityVC.popoverPresentationController?.sourceView = self.view
+        self.present(activityVC, animated: true, completion: nil)
     }
     
     @IBAction func onBtnCameraAction(_ sender: Any) {
@@ -87,6 +108,11 @@ class ScanViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         print("Recognition Progress \(tesseract.progress) %")
     }
     
+    func dismissKeyboard() {
+        txtViewResult.resignFirstResponder()
+    }
 
 
 }
+
+
