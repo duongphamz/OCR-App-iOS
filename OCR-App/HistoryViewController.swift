@@ -25,8 +25,8 @@ class HistoryViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func onBtnBackAction(_ sender: Any) {
-    self.navigationController?.popToViewController((self.navigationController?.viewControllers[0])!, animated: true)
+    @IBAction func onBtnBackAction(_ sender: UIButton) {
+    self.navigationController?.popViewController(animated: true)
     }
     
     
