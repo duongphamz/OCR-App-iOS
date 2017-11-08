@@ -248,7 +248,7 @@
 				TargetAttributes = {
 					22E7EBEB1FACE66200273F9A = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = EW3R3BC6DE;
+						DevelopmentTeam = S9Z4CKEBCU;
 						ProvisioningStyle = Automatic;
 					};
 					22E7EBFF1FACE66200273F9A = {
@@ -565,7 +565,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -609,7 +609,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -623,10 +623,11 @@
 			baseConfigurationReference = AB4A1ED1E6EDDEB2C05CA863 /* Pods-OCR-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EW3R3BC6DE;
+				DEVELOPMENT_TEAM = S9Z4CKEBCU;
 				INFOPLIST_FILE = "OCR-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "KyDuong.OCR-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "liem.OCR-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -637,10 +638,11 @@
 			baseConfigurationReference = 1C0FB7607F3679FE788211A6 /* Pods-OCR-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EW3R3BC6DE;
+				DEVELOPMENT_TEAM = S9Z4CKEBCU;
 				INFOPLIST_FILE = "OCR-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "KyDuong.OCR-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "liem.OCR-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
