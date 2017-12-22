@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		222D97851FAFFE4700F0739E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D97841FAFFE4700F0739E /* HistoryViewController.swift */; };
+		221A187A1FED42A1004DF9F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221A18781FED42A1004DF9F4 /* Main.storyboard */; };
+		221A18821FED42F4004DF9F4 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221A18801FED42F4004DF9F4 /* HistoryCell.swift */; };
+		221A18831FED42F4004DF9F4 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221A18811FED42F4004DF9F4 /* HistoryCell.xib */; };
+		221A18851FED430C004DF9F4 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221A18841FED430C004DF9F4 /* HistoryController.swift */; };
+		221A18871FED4314004DF9F4 /* ScanImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221A18861FED4314004DF9F4 /* ScanImageController.swift */; };
+		221A18891FED431F004DF9F4 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221A18881FED431F004DF9F4 /* MainController.swift */; };
 		22E7EBF01FACE66200273F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7EBEF1FACE66200273F9A /* AppDelegate.swift */; };
-		22E7EBF51FACE66200273F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E7EBF31FACE66200273F9A /* Main.storyboard */; };
 		22E7EBF71FACE66200273F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E7EBF61FACE66200273F9A /* Assets.xcassets */; };
 		22E7EBFA1FACE66200273F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E7EBF81FACE66200273F9A /* LaunchScreen.storyboard */; };
 		22E7EC051FACE66200273F9A /* OCR_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7EC041FACE66200273F9A /* OCR_AppTests.swift */; };
 		22E7EC101FACE66200273F9A /* OCR_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7EC0F1FACE66200273F9A /* OCR_AppUITests.swift */; };
-		22E7EC1E1FACE7F700273F9A /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7EC1D1FACE7F700273F9A /* ScanViewController.swift */; };
 		22E7EC201FACFBE100273F9A /* Tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 22E7EC1F1FACFBE100273F9A /* Tessdata */; };
 		5A957CE6501A9C4045497A59 /* Pods_OCR_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820137BDCBB69FAA1A10B37F /* Pods_OCR_AppUITests.framework */; };
 		67357672CCEE387A89277DD6 /* Pods_OCR_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6757CA35F5D9A98B30C7345B /* Pods_OCR_App.framework */; };
@@ -40,10 +43,14 @@
 
 /* Begin PBXFileReference section */
 		1C0FB7607F3679FE788211A6 /* Pods-OCR-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCR-App/Pods-OCR-App.release.xcconfig"; sourceTree = "<group>"; };
-		222D97841FAFFE4700F0739E /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		221A18791FED42A1004DF9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../Desktop/Project/Text_Scanner/Text_Scanner/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		221A18801FED42F4004DF9F4 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryCell.swift; path = ../../Desktop/Project/Text_Scanner/Text_Scanner/HistoryCell.swift; sourceTree = "<group>"; };
+		221A18811FED42F4004DF9F4 /* HistoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HistoryCell.xib; path = ../../Desktop/Project/Text_Scanner/Text_Scanner/HistoryCell.xib; sourceTree = "<group>"; };
+		221A18841FED430C004DF9F4 /* HistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryController.swift; path = ../../Desktop/Project/Text_Scanner/Text_Scanner/HistoryController.swift; sourceTree = "<group>"; };
+		221A18861FED4314004DF9F4 /* ScanImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanImageController.swift; path = ../../Desktop/Project/Text_Scanner/Text_Scanner/ScanImageController.swift; sourceTree = "<group>"; };
+		221A18881FED431F004DF9F4 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainController.swift; path = ../../Desktop/Project/Text_Scanner/Text_Scanner/MainController.swift; sourceTree = "<group>"; };
 		22E7EBEC1FACE66200273F9A /* OCR-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OCR-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E7EBEF1FACE66200273F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22E7EBF41FACE66200273F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22E7EBF61FACE66200273F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22E7EBF91FACE66200273F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22E7EBFB1FACE66200273F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +60,6 @@
 		22E7EC0B1FACE66200273F9A /* OCR-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OCR-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E7EC0F1FACE66200273F9A /* OCR_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCR_AppUITests.swift; sourceTree = "<group>"; };
 		22E7EC111FACE66200273F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22E7EC1D1FACE7F700273F9A /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		22E7EC1F1FACFBE100273F9A /* Tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tessdata; sourceTree = "<group>"; };
 		4B872A4E8256DA071B918826 /* Pods_OCR_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6757CA35F5D9A98B30C7345B /* Pods_OCR_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +99,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		221A187B1FED42BF004DF9F4 /* Main Controller */ = {
+			isa = PBXGroup;
+			children = (
+				221A18881FED431F004DF9F4 /* MainController.swift */,
+			);
+			name = "Main Controller";
+			sourceTree = "<group>";
+		};
+		221A187C1FED42C7004DF9F4 /* Scan Image Controller */ = {
+			isa = PBXGroup;
+			children = (
+				221A18861FED4314004DF9F4 /* ScanImageController.swift */,
+			);
+			name = "Scan Image Controller";
+			sourceTree = "<group>";
+		};
+		221A187D1FED42CF004DF9F4 /* History Controller */ = {
+			isa = PBXGroup;
+			children = (
+				221A18841FED430C004DF9F4 /* HistoryController.swift */,
+			);
+			name = "History Controller";
+			sourceTree = "<group>";
+		};
+		221A187F1FED42E5004DF9F4 /* History Cell */ = {
+			isa = PBXGroup;
+			children = (
+				221A18801FED42F4004DF9F4 /* HistoryCell.swift */,
+				221A18811FED42F4004DF9F4 /* HistoryCell.xib */,
+			);
+			name = "History Cell";
+			sourceTree = "<group>";
+		};
 		22E7EBE31FACE66200273F9A = {
 			isa = PBXGroup;
 			children = (
@@ -118,11 +157,13 @@
 		22E7EBEE1FACE66200273F9A /* OCR-App */ = {
 			isa = PBXGroup;
 			children = (
+				221A187F1FED42E5004DF9F4 /* History Cell */,
+				221A187D1FED42CF004DF9F4 /* History Controller */,
+				221A187C1FED42C7004DF9F4 /* Scan Image Controller */,
+				221A187B1FED42BF004DF9F4 /* Main Controller */,
 				22E7EC1F1FACFBE100273F9A /* Tessdata */,
 				22E7EBEF1FACE66200273F9A /* AppDelegate.swift */,
-				22E7EC1D1FACE7F700273F9A /* ScanViewController.swift */,
-				222D97841FAFFE4700F0739E /* HistoryViewController.swift */,
-				22E7EBF31FACE66200273F9A /* Main.storyboard */,
+				221A18781FED42A1004DF9F4 /* Main.storyboard */,
 				22E7EBF61FACE66200273F9A /* Assets.xcassets */,
 				22E7EBF81FACE66200273F9A /* LaunchScreen.storyboard */,
 				22E7EBFB1FACE66200273F9A /* Info.plist */,
@@ -248,7 +289,7 @@
 				TargetAttributes = {
 					22E7EBEB1FACE66200273F9A = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = S9Z4CKEBCU;
+						DevelopmentTeam = EW3R3BC6DE;
 						ProvisioningStyle = Automatic;
 					};
 					22E7EBFF1FACE66200273F9A = {
@@ -290,10 +331,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				221A18831FED42F4004DF9F4 /* HistoryCell.xib in Resources */,
 				22E7EBFA1FACE66200273F9A /* LaunchScreen.storyboard in Resources */,
 				22E7EC201FACFBE100273F9A /* Tessdata in Resources */,
 				22E7EBF71FACE66200273F9A /* Assets.xcassets in Resources */,
-				22E7EBF51FACE66200273F9A /* Main.storyboard in Resources */,
+				221A187A1FED42A1004DF9F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,9 +510,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222D97851FAFFE4700F0739E /* HistoryViewController.swift in Sources */,
+				221A18871FED4314004DF9F4 /* ScanImageController.swift in Sources */,
+				221A18821FED42F4004DF9F4 /* HistoryCell.swift in Sources */,
+				221A18851FED430C004DF9F4 /* HistoryController.swift in Sources */,
 				22E7EBF01FACE66200273F9A /* AppDelegate.swift in Sources */,
-				22E7EC1E1FACE7F700273F9A /* ScanViewController.swift in Sources */,
+				221A18891FED431F004DF9F4 /* MainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,10 +550,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		22E7EBF31FACE66200273F9A /* Main.storyboard */ = {
+		221A18781FED42A1004DF9F4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				22E7EBF41FACE66200273F9A /* Base */,
+				221A18791FED42A1004DF9F4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -623,7 +667,8 @@
 			baseConfigurationReference = AB4A1ED1E6EDDEB2C05CA863 /* Pods-OCR-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S9Z4CKEBCU;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = EW3R3BC6DE;
 				INFOPLIST_FILE = "OCR-App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -638,7 +683,8 @@
 			baseConfigurationReference = 1C0FB7607F3679FE788211A6 /* Pods-OCR-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S9Z4CKEBCU;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = EW3R3BC6DE;
 				INFOPLIST_FILE = "OCR-App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
